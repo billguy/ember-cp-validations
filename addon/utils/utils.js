@@ -12,7 +12,7 @@ import {
 
 let DS;
 if (macroCondition(dependencySatisfies('ember-data', '*'))) {
-  DS = importSync('@ember-data').default;
+  DS = importSync('@ember-data/model').default;
 }
 
 export { getDependentKeys, isDescriptor } from '../-private/ember-internals';
