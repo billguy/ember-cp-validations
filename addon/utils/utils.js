@@ -44,7 +44,7 @@ export function isPromise(p) {
 }
 
 export function isDsModel(o) {
-  return !!(DS && o && o instanceof DS.Model);
+  return !!(DS && o && o instanceof DS);
 }
 
 export function isDSManyArray(o) {
