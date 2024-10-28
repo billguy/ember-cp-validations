@@ -51,7 +51,7 @@ export function isDSManyArray(o) {
   return !!(
     DS &&
     o &&
-    (o instanceof DS.PromiseManyArray || o instanceof DS.ManyArray)
+    (o.constructor.name === 'PromiseManyArray' || o.constructor.name === 'ManyArray')
   );
 }
 
